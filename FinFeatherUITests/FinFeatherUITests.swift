@@ -2,7 +2,7 @@
 //  FinFeatherUITests.swift
 //  FinFeatherUITests
 //
-//  Created by dyantsybaiev on 25.10.2023.
+//  Created by Dmytro Yantsybaiev on 25.10.2023.
 //
 
 import XCTest
