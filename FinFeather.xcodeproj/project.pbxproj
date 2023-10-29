@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0659D7842AED23F500C0D5B6 /* Keychained.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0659D7832AED23F500C0D5B6 /* Keychained.swift */; };
+		06C5D0FA2AEDB65B00457EF8 /* FFDataSource in Frameworks */ = {isa = PBXBuildFile; productRef = 06C5D0F92AEDB65B00457EF8 /* FFDataSource */; };
+		06C5D0FC2AEDB65F00457EF8 /* FFKeychain in Frameworks */ = {isa = PBXBuildFile; productRef = 06C5D0FB2AEDB65F00457EF8 /* FFKeychain */; };
+		06C5D1042AEDCF7A00457EF8 /* FFKeychain in Frameworks */ = {isa = PBXBuildFile; productRef = 06C5D1032AEDCF7A00457EF8 /* FFKeychain */; };
+		06C5D1082AEDD03A00457EF8 /* FFKeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5D1072AEDD03A00457EF8 /* FFKeychainTests.swift */; };
+		06C5D10D2AEDD4F500457EF8 /* KeychainedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5D10C2AEDD4F500457EF8 /* KeychainedTests.swift */; };
 		06EFC02F2AE96AAB00BDAF1D /* FinFeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC02E2AE96AAB00BDAF1D /* FinFeatherApp.swift */; };
 		06EFC0312AE96AAB00BDAF1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC0302AE96AAB00BDAF1D /* ContentView.swift */; };
-		06EFC0332AE96AAB00BDAF1D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC0322AE96AAB00BDAF1D /* Item.swift */; };
 		06EFC0352AE96AAC00BDAF1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06EFC0342AE96AAC00BDAF1D /* Assets.xcassets */; };
 		06EFC0392AE96AAC00BDAF1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06EFC0382AE96AAC00BDAF1D /* Preview Assets.xcassets */; };
-		06EFC0442AE96AAC00BDAF1D /* FinFeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC0432AE96AAC00BDAF1D /* FinFeatherTests.swift */; };
 		06EFC04E2AE96AAC00BDAF1D /* FinFeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC04D2AE96AAC00BDAF1D /* FinFeatherUITests.swift */; };
 		06EFC0502AE96AAC00BDAF1D /* FinFeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC04F2AE96AAC00BDAF1D /* FinFeatherUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -35,16 +39,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0659D7832AED23F500C0D5B6 /* Keychained.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychained.swift; sourceTree = "<group>"; };
+		06C5D0F72AEDB64C00457EF8 /* FFDataSource */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FFDataSource; sourceTree = "<group>"; };
+		06C5D0FD2AEDB74800457EF8 /* FFKeychain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FFKeychain; sourceTree = "<group>"; };
+		06C5D1072AEDD03A00457EF8 /* FFKeychainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFKeychainTests.swift; sourceTree = "<group>"; };
+		06C5D10C2AEDD4F500457EF8 /* KeychainedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainedTests.swift; sourceTree = "<group>"; };
 		06EFC02B2AE96AAB00BDAF1D /* FinFeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinFeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EFC02E2AE96AAB00BDAF1D /* FinFeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinFeatherApp.swift; sourceTree = "<group>"; };
 		06EFC0302AE96AAB00BDAF1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		06EFC0322AE96AAB00BDAF1D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		06EFC0342AE96AAC00BDAF1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06EFC0362AE96AAC00BDAF1D /* FinFeather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinFeather.entitlements; sourceTree = "<group>"; };
 		06EFC0382AE96AAC00BDAF1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		06EFC03A2AE96AAC00BDAF1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06EFC03F2AE96AAC00BDAF1D /* FinFeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinFeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		06EFC0432AE96AAC00BDAF1D /* FinFeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinFeatherTests.swift; sourceTree = "<group>"; };
 		06EFC0492AE96AAC00BDAF1D /* FinFeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinFeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EFC04D2AE96AAC00BDAF1D /* FinFeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinFeatherUITests.swift; sourceTree = "<group>"; };
 		06EFC04F2AE96AAC00BDAF1D /* FinFeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinFeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -55,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C5D0FC2AEDB65F00457EF8 /* FFKeychain in Frameworks */,
+				06C5D0FA2AEDB65B00457EF8 /* FFDataSource in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C5D1042AEDCF7A00457EF8 /* FFKeychain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +85,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06017A332AED93020039C63A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06C5D0FD2AEDB74800457EF8 /* FFKeychain */,
+				06C5D0F72AEDB64C00457EF8 /* FFDataSource */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0659D77B2AED201600C0D5B6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				06EFC02E2AE96AAB00BDAF1D /* FinFeatherApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0659D77E2AED219E00C0D5B6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0659D78A2AED291D00C0D5B6 /* Property Wrappers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0659D78A2AED291D00C0D5B6 /* Property Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				0659D7832AED23F500C0D5B6 /* Keychained.swift */,
+			);
+			path = "Property Wrappers";
+			sourceTree = "<group>";
+		};
+		06C5D1052AEDD00300457EF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06C5D1062AEDD01200457EF8 /* FFKeychain */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		06C5D1062AEDD01200457EF8 /* FFKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				06C5D1072AEDD03A00457EF8 /* FFKeychainTests.swift */,
+			);
+			path = FFKeychain;
+			sourceTree = "<group>";
+		};
+		06C5D1092AEDD4CB00457EF8 /* FinFeather */ = {
+			isa = PBXGroup;
+			children = (
+				06C5D10A2AEDD4DA00457EF8 /* Common */,
+			);
+			path = FinFeather;
+			sourceTree = "<group>";
+		};
+		06C5D10A2AEDD4DA00457EF8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				06C5D10B2AEDD4E400457EF8 /* Property Wrappers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		06C5D10B2AEDD4E400457EF8 /* Property Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				06C5D10C2AEDD4F500457EF8 /* KeychainedTests.swift */,
+			);
+			path = "Property Wrappers";
+			sourceTree = "<group>";
+		};
 		06EFC0222AE96AAB00BDAF1D = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +165,7 @@
 				06EFC0422AE96AAC00BDAF1D /* FinFeatherTests */,
 				06EFC04C2AE96AAC00BDAF1D /* FinFeatherUITests */,
 				06EFC02C2AE96AAB00BDAF1D /* Products */,
+				06017A332AED93020039C63A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,9 +182,9 @@
 		06EFC02D2AE96AAB00BDAF1D /* FinFeather */ = {
 			isa = PBXGroup;
 			children = (
-				06EFC02E2AE96AAB00BDAF1D /* FinFeatherApp.swift */,
+				0659D77B2AED201600C0D5B6 /* Application */,
+				0659D77E2AED219E00C0D5B6 /* Common */,
 				06EFC0302AE96AAB00BDAF1D /* ContentView.swift */,
-				06EFC0322AE96AAB00BDAF1D /* Item.swift */,
 				06EFC0342AE96AAC00BDAF1D /* Assets.xcassets */,
 				06EFC0362AE96AAC00BDAF1D /* FinFeather.entitlements */,
 				06EFC03A2AE96AAC00BDAF1D /* Info.plist */,
@@ -120,7 +204,8 @@
 		06EFC0422AE96AAC00BDAF1D /* FinFeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				06EFC0432AE96AAC00BDAF1D /* FinFeatherTests.swift */,
+				06C5D1092AEDD4CB00457EF8 /* FinFeather */,
+				06C5D1052AEDD00300457EF8 /* Frameworks */,
 			);
 			path = FinFeatherTests;
 			sourceTree = "<group>";
@@ -150,6 +235,10 @@
 			dependencies = (
 			);
 			name = FinFeather;
+			packageProductDependencies = (
+				06C5D0F92AEDB65B00457EF8 /* FFDataSource */,
+				06C5D0FB2AEDB65F00457EF8 /* FFKeychain */,
+			);
 			productName = FinFeather;
 			productReference = 06EFC02B2AE96AAB00BDAF1D /* FinFeather.app */;
 			productType = "com.apple.product-type.application";
@@ -168,6 +257,9 @@
 				06EFC0412AE96AAC00BDAF1D /* PBXTargetDependency */,
 			);
 			name = FinFeatherTests;
+			packageProductDependencies = (
+				06C5D1032AEDCF7A00457EF8 /* FFKeychain */,
+			);
 			productName = FinFeatherTests;
 			productReference = 06EFC03F2AE96AAC00BDAF1D /* FinFeatherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -265,7 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06EFC0312AE96AAB00BDAF1D /* ContentView.swift in Sources */,
-				06EFC0332AE96AAB00BDAF1D /* Item.swift in Sources */,
+				0659D7842AED23F500C0D5B6 /* Keychained.swift in Sources */,
 				06EFC02F2AE96AAB00BDAF1D /* FinFeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +366,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06EFC0442AE96AAC00BDAF1D /* FinFeatherTests.swift in Sources */,
+				06C5D10D2AEDD4F500457EF8 /* KeychainedTests.swift in Sources */,
+				06C5D1082AEDD03A00457EF8 /* FFKeychainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +551,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)";
 			};
 			name = Debug;
 		};
@@ -502,6 +596,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)";
 			};
 			name = Release;
 		};
@@ -635,6 +730,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06C5D0F92AEDB65B00457EF8 /* FFDataSource */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FFDataSource;
+		};
+		06C5D0FB2AEDB65F00457EF8 /* FFKeychain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FFKeychain;
+		};
+		06C5D1032AEDCF7A00457EF8 /* FFKeychain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FFKeychain;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 06EFC0232AE96AAB00BDAF1D /* Project object */;
 }
