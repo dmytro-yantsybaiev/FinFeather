@@ -7,11 +7,12 @@
 
 import SwiftUI
 import SwiftData
+import FFDataSource
 
 @main
 struct FinFeatherApp: App {
 
-    var sharedModelContainer: ModelContainer = {
+    private let sharedModelContainer: ModelContainer = {
         do {
             let schema = Schema([
                 Item.self,
