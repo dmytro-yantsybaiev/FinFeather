@@ -40,8 +40,6 @@
 
 /* Begin PBXFileReference section */
 		0659D7832AED23F500C0D5B6 /* Keychained.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychained.swift; sourceTree = "<group>"; };
-		06C5D0F72AEDB64C00457EF8 /* FFDataSource */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FFDataSource; sourceTree = "<group>"; };
-		06C5D0FD2AEDB74800457EF8 /* FFKeychain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FFKeychain; sourceTree = "<group>"; };
 		06C5D1072AEDD03A00457EF8 /* FFKeychainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFKeychainTests.swift; sourceTree = "<group>"; };
 		06C5D10C2AEDD4F500457EF8 /* KeychainedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainedTests.swift; sourceTree = "<group>"; };
 		06EFC02B2AE96AAB00BDAF1D /* FinFeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinFeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,15 +83,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06017A332AED93020039C63A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				06C5D0FD2AEDB74800457EF8 /* FFKeychain */,
-				06C5D0F72AEDB64C00457EF8 /* FFDataSource */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		0659D77B2AED201600C0D5B6 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +154,6 @@
 				06EFC0422AE96AAC00BDAF1D /* FinFeatherTests */,
 				06EFC04C2AE96AAC00BDAF1D /* FinFeatherUITests */,
 				06EFC02C2AE96AAB00BDAF1D /* Products */,
-				06017A332AED93020039C63A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
