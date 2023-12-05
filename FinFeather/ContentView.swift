@@ -8,16 +8,18 @@
 import SwiftUI
 import SwiftData
 import FFDataSource
+import FFDomain
 
 struct ContentView: View {
 
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @InjectedObservable private var store: Store<AppState, ItemAction>
+
+    let respository = SwiftDataRepository()
 
     var body: some View {
         NavigationSplitView {
             List {
-                ForEach(items) { item in
+                ForEach(store.state.items) { item in
                     NavigationLink {
                         Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
                     } label: {
@@ -44,19 +46,21 @@ struct ContentView: View {
         } detail: {
             Text("Select an item")
         }
+        .onAppear {
+            store.dispatch(.fetch)
+        }
     }
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
+            store.dispatch(.add(Item()))
         }
     }
 
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             for index in offsets {
-                modelContext.delete(items[index])
+                store.dispatch(.remove(store.state.items[index]))
             }
         }
     }

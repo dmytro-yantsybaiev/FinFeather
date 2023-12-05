@@ -7,12 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064C9A812AFB7FAD001C41CB /* ItemLoggingMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064C9A802AFB7FAD001C41CB /* ItemLoggingMiddleware.swift */; };
 		0659D7842AED23F500C0D5B6 /* Keychained.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0659D7832AED23F500C0D5B6 /* Keychained.swift */; };
+		067F691C2AF037AF002F7D32 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F691B2AF037AF002F7D32 /* Store.swift */; };
+		067F691F2AF03A7B002F7D32 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F691E2AF03A7B002F7D32 /* AppState.swift */; };
+		067F69242AF0D135002F7D32 /* MiddlewareType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F69232AF0D135002F7D32 /* MiddlewareType.swift */; };
+		067F69272AF0D18E002F7D32 /* AnyMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F69262AF0D18E002F7D32 /* AnyMiddleware.swift */; };
+		067F69292AF0D1A8002F7D32 /* MiddlewarePipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F69282AF0D1A8002F7D32 /* MiddlewarePipeline.swift */; };
+		067F69302AF0D25B002F7D32 /* MiddlewareBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F692F2AF0D25B002F7D32 /* MiddlewareBuilder.swift */; };
+		067F69322AF0D42F002F7D32 /* EchoMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F69312AF0D42F002F7D32 /* EchoMiddleware.swift */; };
+		067F69342AF0D7A1002F7D32 /* ReducerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F69332AF0D7A1002F7D32 /* ReducerType.swift */; };
+		067F69372AF0D7DB002F7D32 /* AnyReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F69362AF0D7DB002F7D32 /* AnyReducer.swift */; };
+		067F693B2AF0DF26002F7D32 /* ItemReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F693A2AF0DF26002F7D32 /* ItemReducer.swift */; };
+		067F693D2AF0DF56002F7D32 /* ItemAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F693C2AF0DF56002F7D32 /* ItemAction.swift */; };
+		067F69402AF0ECAD002F7D32 /* ItemMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F693F2AF0ECAD002F7D32 /* ItemMiddleware.swift */; };
 		06C5D0FA2AEDB65B00457EF8 /* FFDataSource in Frameworks */ = {isa = PBXBuildFile; productRef = 06C5D0F92AEDB65B00457EF8 /* FFDataSource */; };
 		06C5D0FC2AEDB65F00457EF8 /* FFKeychain in Frameworks */ = {isa = PBXBuildFile; productRef = 06C5D0FB2AEDB65F00457EF8 /* FFKeychain */; };
 		06C5D1042AEDCF7A00457EF8 /* FFKeychain in Frameworks */ = {isa = PBXBuildFile; productRef = 06C5D1032AEDCF7A00457EF8 /* FFKeychain */; };
 		06C5D1082AEDD03A00457EF8 /* FFKeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5D1072AEDD03A00457EF8 /* FFKeychainTests.swift */; };
 		06C5D10D2AEDD4F500457EF8 /* KeychainedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5D10C2AEDD4F500457EF8 /* KeychainedTests.swift */; };
+		06CD8CE02AFADAAF00C22E7F /* DependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD8CDF2AFADAAF00C22E7F /* DependencyResolver.swift */; };
+		06CD8CE22AFADAC500C22E7F /* InjectionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD8CE12AFADAC500C22E7F /* InjectionBundle.swift */; };
+		06CD8CE42AFADBAA00C22E7F /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD8CE32AFADBAA00C22E7F /* Injected.swift */; };
+		06CD8CE62AFADBC600C22E7F /* InjectedObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD8CE52AFADBC600C22E7F /* InjectedObservable.swift */; };
+		06CD8CEF2AFAE09600C22E7F /* FFDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 06CD8CEE2AFAE09600C22E7F /* FFDomain */; };
 		06EFC02F2AE96AAB00BDAF1D /* FinFeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC02E2AE96AAB00BDAF1D /* FinFeatherApp.swift */; };
 		06EFC0312AE96AAB00BDAF1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC0302AE96AAB00BDAF1D /* ContentView.swift */; };
 		06EFC0352AE96AAC00BDAF1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06EFC0342AE96AAC00BDAF1D /* Assets.xcassets */; };
@@ -39,9 +57,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		064C9A802AFB7FAD001C41CB /* ItemLoggingMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemLoggingMiddleware.swift; sourceTree = "<group>"; };
 		0659D7832AED23F500C0D5B6 /* Keychained.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychained.swift; sourceTree = "<group>"; };
+		067F691B2AF037AF002F7D32 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		067F691E2AF03A7B002F7D32 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		067F69232AF0D135002F7D32 /* MiddlewareType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddlewareType.swift; sourceTree = "<group>"; };
+		067F69262AF0D18E002F7D32 /* AnyMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyMiddleware.swift; sourceTree = "<group>"; };
+		067F69282AF0D1A8002F7D32 /* MiddlewarePipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddlewarePipeline.swift; sourceTree = "<group>"; };
+		067F692F2AF0D25B002F7D32 /* MiddlewareBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddlewareBuilder.swift; sourceTree = "<group>"; };
+		067F69312AF0D42F002F7D32 /* EchoMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoMiddleware.swift; sourceTree = "<group>"; };
+		067F69332AF0D7A1002F7D32 /* ReducerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducerType.swift; sourceTree = "<group>"; };
+		067F69362AF0D7DB002F7D32 /* AnyReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyReducer.swift; sourceTree = "<group>"; };
+		067F693A2AF0DF26002F7D32 /* ItemReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemReducer.swift; sourceTree = "<group>"; };
+		067F693C2AF0DF56002F7D32 /* ItemAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAction.swift; sourceTree = "<group>"; };
+		067F693F2AF0ECAD002F7D32 /* ItemMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMiddleware.swift; sourceTree = "<group>"; };
 		06C5D1072AEDD03A00457EF8 /* FFKeychainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFKeychainTests.swift; sourceTree = "<group>"; };
 		06C5D10C2AEDD4F500457EF8 /* KeychainedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainedTests.swift; sourceTree = "<group>"; };
+		06CD8CDF2AFADAAF00C22E7F /* DependencyResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyResolver.swift; sourceTree = "<group>"; };
+		06CD8CE12AFADAC500C22E7F /* InjectionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionBundle.swift; sourceTree = "<group>"; };
+		06CD8CE32AFADBAA00C22E7F /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		06CD8CE52AFADBC600C22E7F /* InjectedObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedObservable.swift; sourceTree = "<group>"; };
 		06EFC02B2AE96AAB00BDAF1D /* FinFeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinFeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EFC02E2AE96AAB00BDAF1D /* FinFeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinFeatherApp.swift; sourceTree = "<group>"; };
 		06EFC0302AE96AAB00BDAF1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06CD8CEF2AFAE09600C22E7F /* FFDomain in Frameworks */,
 				06C5D0FC2AEDB65F00457EF8 /* FFKeychain in Frameworks */,
 				06C5D0FA2AEDB65B00457EF8 /* FFDataSource in Frameworks */,
 			);
@@ -86,6 +122,7 @@
 		0659D77B2AED201600C0D5B6 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				06CD8CDC2AFAD46700C22E7F /* DI */,
 				06EFC02E2AE96AAB00BDAF1D /* FinFeatherApp.swift */,
 			);
 			path = Application;
@@ -94,7 +131,11 @@
 		0659D77E2AED219E00C0D5B6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				067F69202AF0D10D002F7D32 /* Interfaces */,
 				0659D78A2AED291D00C0D5B6 /* Property Wrappers */,
+				067F692E2AF0D241002F7D32 /* Result Builders */,
+				067F69352AF0D7C8002F7D32 /* Reducers */,
+				067F69252AF0D16F002F7D32 /* Middlewares */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -102,9 +143,87 @@
 		0659D78A2AED291D00C0D5B6 /* Property Wrappers */ = {
 			isa = PBXGroup;
 			children = (
+				06CD8CE32AFADBAA00C22E7F /* Injected.swift */,
+				06CD8CE52AFADBC600C22E7F /* InjectedObservable.swift */,
 				0659D7832AED23F500C0D5B6 /* Keychained.swift */,
 			);
 			path = "Property Wrappers";
+			sourceTree = "<group>";
+		};
+		067F691A2AF0379F002F7D32 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				067F691B2AF037AF002F7D32 /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		067F691D2AF03A6C002F7D32 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				067F691E2AF03A7B002F7D32 /* AppState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		067F69202AF0D10D002F7D32 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				067F69332AF0D7A1002F7D32 /* ReducerType.swift */,
+				067F69232AF0D135002F7D32 /* MiddlewareType.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		067F69252AF0D16F002F7D32 /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				067F69262AF0D18E002F7D32 /* AnyMiddleware.swift */,
+				067F69282AF0D1A8002F7D32 /* MiddlewarePipeline.swift */,
+				067F69312AF0D42F002F7D32 /* EchoMiddleware.swift */,
+			);
+			path = Middlewares;
+			sourceTree = "<group>";
+		};
+		067F692E2AF0D241002F7D32 /* Result Builders */ = {
+			isa = PBXGroup;
+			children = (
+				067F692F2AF0D25B002F7D32 /* MiddlewareBuilder.swift */,
+			);
+			path = "Result Builders";
+			sourceTree = "<group>";
+		};
+		067F69352AF0D7C8002F7D32 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				067F69362AF0D7DB002F7D32 /* AnyReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		067F69382AF0DE29002F7D32 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				067F693C2AF0DF56002F7D32 /* ItemAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		067F69392AF0DF16002F7D32 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				067F693A2AF0DF26002F7D32 /* ItemReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		067F693E2AF0EC8F002F7D32 /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				067F693F2AF0ECAD002F7D32 /* ItemMiddleware.swift */,
+				064C9A802AFB7FAD001C41CB /* ItemLoggingMiddleware.swift */,
+			);
+			path = Middlewares;
 			sourceTree = "<group>";
 		};
 		06C5D1052AEDD00300457EF8 /* Frameworks */ = {
@@ -147,6 +266,22 @@
 			path = "Property Wrappers";
 			sourceTree = "<group>";
 		};
+		06CD8CDC2AFAD46700C22E7F /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				06CD8CDF2AFADAAF00C22E7F /* DependencyResolver.swift */,
+				06CD8CE12AFADAC500C22E7F /* InjectionBundle.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		06CD8CED2AFAE09600C22E7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		06EFC0222AE96AAB00BDAF1D = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +289,7 @@
 				06EFC0422AE96AAC00BDAF1D /* FinFeatherTests */,
 				06EFC04C2AE96AAC00BDAF1D /* FinFeatherUITests */,
 				06EFC02C2AE96AAB00BDAF1D /* Products */,
+				06CD8CED2AFAE09600C22E7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +306,11 @@
 		06EFC02D2AE96AAB00BDAF1D /* FinFeather */ = {
 			isa = PBXGroup;
 			children = (
+				067F691A2AF0379F002F7D32 /* Store */,
+				067F691D2AF03A6C002F7D32 /* States */,
+				067F69382AF0DE29002F7D32 /* Actions */,
+				067F69392AF0DF16002F7D32 /* Reducer */,
+				067F693E2AF0EC8F002F7D32 /* Middlewares */,
 				0659D77B2AED201600C0D5B6 /* Application */,
 				0659D77E2AED219E00C0D5B6 /* Common */,
 				06EFC0302AE96AAB00BDAF1D /* ContentView.swift */,
@@ -226,6 +367,7 @@
 			packageProductDependencies = (
 				06C5D0F92AEDB65B00457EF8 /* FFDataSource */,
 				06C5D0FB2AEDB65F00457EF8 /* FFKeychain */,
+				06CD8CEE2AFAE09600C22E7F /* FFDomain */,
 			);
 			productName = FinFeather;
 			productReference = 06EFC02B2AE96AAB00BDAF1D /* FinFeather.app */;
@@ -345,8 +487,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				06EFC0312AE96AAB00BDAF1D /* ContentView.swift in Sources */,
+				067F691F2AF03A7B002F7D32 /* AppState.swift in Sources */,
+				06CD8CE42AFADBAA00C22E7F /* Injected.swift in Sources */,
 				0659D7842AED23F500C0D5B6 /* Keychained.swift in Sources */,
+				067F69302AF0D25B002F7D32 /* MiddlewareBuilder.swift in Sources */,
+				067F69242AF0D135002F7D32 /* MiddlewareType.swift in Sources */,
+				06CD8CE22AFADAC500C22E7F /* InjectionBundle.swift in Sources */,
 				06EFC02F2AE96AAB00BDAF1D /* FinFeatherApp.swift in Sources */,
+				06CD8CE62AFADBC600C22E7F /* InjectedObservable.swift in Sources */,
+				067F69272AF0D18E002F7D32 /* AnyMiddleware.swift in Sources */,
+				064C9A812AFB7FAD001C41CB /* ItemLoggingMiddleware.swift in Sources */,
+				067F691C2AF037AF002F7D32 /* Store.swift in Sources */,
+				067F693D2AF0DF56002F7D32 /* ItemAction.swift in Sources */,
+				067F69322AF0D42F002F7D32 /* EchoMiddleware.swift in Sources */,
+				06CD8CE02AFADAAF00C22E7F /* DependencyResolver.swift in Sources */,
+				067F693B2AF0DF26002F7D32 /* ItemReducer.swift in Sources */,
+				067F69342AF0D7A1002F7D32 /* ReducerType.swift in Sources */,
+				067F69372AF0D7DB002F7D32 /* AnyReducer.swift in Sources */,
+				067F69402AF0ECAD002F7D32 /* ItemMiddleware.swift in Sources */,
+				067F69292AF0D1A8002F7D32 /* MiddlewarePipeline.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,6 +890,10 @@
 		06C5D1032AEDCF7A00457EF8 /* FFKeychain */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FFKeychain;
+		};
+		06CD8CEE2AFAE09600C22E7F /* FFDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FFDomain;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

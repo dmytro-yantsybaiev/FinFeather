@@ -16,4 +16,8 @@ public final class Item {
     public init(timestamp: Date) {
         self.timestamp = timestamp
     }
+
+    public convenience init() {
+        self.init(timestamp: Date())
+    }
 }
