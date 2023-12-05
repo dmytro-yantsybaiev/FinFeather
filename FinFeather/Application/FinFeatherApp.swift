@@ -6,28 +6,35 @@
 //
 
 import SwiftUI
-import SwiftData
-import FFDataSource
+import FFDomain
 
 @main
 struct FinFeatherApp: App {
-
-    private let sharedModelContainer: ModelContainer = {
-        do {
-            let schema = Schema([
-                Item.self,
-            ])
-            let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(sharedModelContainer)
+    }
+
+    init() {
+        InjectionBundle.load { resolver in
+
+            // Common
+            resolver.single { SwiftDataRepository() }
+
+            // Use Cases
+            resolver.factory { AddItemUseCase(repository: resolver.resolve()) }
+            resolver.factory { RemoveItemUseCase(repository: resolver.resolve()) }
+            resolver.factory { FetchItemsUseCase(repository: resolver.resolve()) }
+
+            // Stores
+            resolver.single {
+                Store<AppState, ItemAction>(AppState(), ItemReducer()) {
+                    ItemLoggingMiddleware().eraseToAnyMiddleware()
+                    ItemMiddleware().eraseToAnyMiddleware()
+                }
+            }
+        }
     }
 }
