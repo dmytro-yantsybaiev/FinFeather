@@ -10,13 +10,10 @@ let package = Package(
         .macOS(.v14),
     ],
     products: [
-        .library(
-            name: "FFKeychain",
-            targets: ["FFKeychain"]
-        ),
+        .library(name: "FFKeychain", targets: ["FFKeychain"]),
     ],
     dependencies: [
-        .package(name: "FFDataSource", path: "../FFDataSource")
+        .package(name: "FFDataSource", path: "../FFDataSource"),
     ],
     targets: [
         .target(
