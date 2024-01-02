@@ -8,13 +8,16 @@
       location = "container:"
       name = "Dependencies">
       <FileRef
-         location = "group:FFDomain">
-      </FileRef>
-      <FileRef
          location = "group:FFDataSource">
       </FileRef>
       <FileRef
+         location = "group:FFDomain">
+      </FileRef>
+      <FileRef
          location = "group:FFKeychain">
+      </FileRef>
+      <FileRef
+         location = "group:FFMVVM">
       </FileRef>
    </Group>
 </Workspace>

@@ -6,20 +6,20 @@
 //
 
 import SwiftUI
+import Combine
 import SwiftData
 import FFDataSource
 import FFDomain
+import FFMVVM
 
-struct ContentView: View {
+struct ContentView: BaseView {
 
-    @InjectedObservable private var store: Store<AppState, ItemAction>
-
-    let respository = SwiftDataRepository()
+    @ObservedObject private(set) var viewModel: ContentViewModel
 
     var body: some View {
         NavigationSplitView {
             List {
-                ForEach(store.state.items) { item in
+                ForEach(viewModel.items) { item in
                     NavigationLink {
                         Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
                     } label: {
@@ -47,26 +47,35 @@ struct ContentView: View {
             Text("Select an item")
         }
         .onAppear {
-            store.dispatch(.fetch)
+            fetchItems()
         }
+    }
+
+    init(_ viewModel: ContentViewModel) {
+        self.viewModel = viewModel
+    }
+
+    private func fetchItems() {
+        viewModel.fetchItemsSubject.send()
     }
 
     private func addItem() {
         withAnimation {
-            store.dispatch(.add(Item()))
+            viewModel.addItemSubject.send(Item())
         }
     }
 
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             for index in offsets {
-                store.dispatch(.remove(store.state.items[index]))
+                guard let item = viewModel.items[safe: index] else { return }
+                viewModel.removeItemSubject.send(item)
             }
         }
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(ContentViewModel())
         .modelContainer(for: Item.self, inMemory: true)
 }

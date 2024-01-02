@@ -4,15 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "FFDataSource",
+    name: "FFMVVM",
     platforms: [
         .iOS(.v17),
         .macOS(.v14),
     ],
     products: [
-        .library(name: "FFDataSource", targets: ["FFDataSource"]),
+        .library(name: "FFMVVM", targets: ["FFMVVM"]),
     ],
     targets: [
-        .target(name: "FFDataSource"),
+        .target(name: "FFMVVM"),
     ]
 )

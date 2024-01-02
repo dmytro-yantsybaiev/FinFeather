@@ -13,7 +13,7 @@ struct FinFeatherApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(ContentViewModel())
         }
     }
 
@@ -27,14 +27,6 @@ struct FinFeatherApp: App {
             resolver.factory { AddItemUseCase(repository: resolver.resolve()) }
             resolver.factory { RemoveItemUseCase(repository: resolver.resolve()) }
             resolver.factory { FetchItemsUseCase(repository: resolver.resolve()) }
-
-            // Stores
-            resolver.single {
-                Store<AppState, ItemAction>(AppState(), ItemReducer()) {
-                    ItemLoggingMiddleware().eraseToAnyMiddleware()
-                    ItemMiddleware().eraseToAnyMiddleware()
-                }
-            }
         }
     }
 }

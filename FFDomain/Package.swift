@@ -10,13 +10,10 @@ let package = Package(
         .macOS(.v14),
     ],
     products: [
-        .library(
-            name: "FFDomain",
-            targets: ["FFDomain"]
-        ),
+        .library(name: "FFDomain",targets: ["FFDomain"]),
     ],
     dependencies: [
-        .package(name: "FFDataSource", path: "../FFDataSource")
+        .package(name: "FFDataSource", path: "../FFDataSource"),
     ],
     targets: [
         .target(
@@ -25,8 +22,6 @@ let package = Package(
                 .product(name: "FFDataSource", package: "FFDataSource"),
             ]
         ),
-        .testTarget(
-            name: "FFDomainTests",
-            dependencies: ["FFDomain"]),
+        .testTarget(name: "FFDomainTests", dependencies: ["FFDomain"]),
     ]
 )
