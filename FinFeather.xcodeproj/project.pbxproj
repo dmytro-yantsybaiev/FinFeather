@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		065061F92B4462CA00044955 /* FFMVVM in Frameworks */ = {isa = PBXBuildFile; productRef = 065061F82B4462CA00044955 /* FFMVVM */; };
-		065061FB2B4463DD00044955 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065061FA2B4463DD00044955 /* ContentViewModel.swift */; };
+		062F4DCE2B5839140001915D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 062F4DCD2B5839140001915D /* ComposableArchitecture */; };
+		062F4DD12B5840070001915D /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 062F4DD02B5840070001915D /* Resolver */; };
+		062F4DD32B5851C40001915D /* App+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F4DD22B5851C40001915D /* App+Injection.swift */; };
+		062F4DD52B5858670001915D /* ModelContainer+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F4DD42B5858670001915D /* ModelContainer+Injection.swift */; };
+		062F4DD72B5862240001915D /* UseCaseItem+Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F4DD62B5862240001915D /* UseCaseItem+Dependency.swift */; };
+		062F4DDA2B5870D50001915D /* FeatureItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F4DD92B5870D50001915D /* FeatureItems.swift */; };
 		0659D7842AED23F500C0D5B6 /* Keychained.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0659D7832AED23F500C0D5B6 /* Keychained.swift */; };
+		06A1E7852B5AA2EC00AA3B1A /* SwiftDataRepository+Dependecy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1E7842B5AA2EC00AA3B1A /* SwiftDataRepository+Dependecy.swift */; };
+		06B80A112B59B26E00B31145 /* FeatureItemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B80A102B59B26E00B31145 /* FeatureItemsTests.swift */; };
+		06B80A1A2B59C43600B31145 /* FFDataSource in Frameworks */ = {isa = PBXBuildFile; productRef = 06B80A192B59C43600B31145 /* FFDataSource */; };
+		06BC83B42B5B07850074849A /* ComposableRepositories in Frameworks */ = {isa = PBXBuildFile; productRef = 06BC83B32B5B07850074849A /* ComposableRepositories */; };
+		06BC83B62B5B07850074849A /* ComposableRepositoriesLive in Frameworks */ = {isa = PBXBuildFile; productRef = 06BC83B52B5B07850074849A /* ComposableRepositoriesLive */; };
 		06C5D0FA2AEDB65B00457EF8 /* FFDataSource in Frameworks */ = {isa = PBXBuildFile; productRef = 06C5D0F92AEDB65B00457EF8 /* FFDataSource */; };
 		06C5D0FC2AEDB65F00457EF8 /* FFKeychain in Frameworks */ = {isa = PBXBuildFile; productRef = 06C5D0FB2AEDB65F00457EF8 /* FFKeychain */; };
 		06C5D1042AEDCF7A00457EF8 /* FFKeychain in Frameworks */ = {isa = PBXBuildFile; productRef = 06C5D1032AEDCF7A00457EF8 /* FFKeychain */; };
 		06C5D1082AEDD03A00457EF8 /* FFKeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5D1072AEDD03A00457EF8 /* FFKeychainTests.swift */; };
 		06C5D10D2AEDD4F500457EF8 /* KeychainedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5D10C2AEDD4F500457EF8 /* KeychainedTests.swift */; };
-		06CD8CE02AFADAAF00C22E7F /* DependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD8CDF2AFADAAF00C22E7F /* DependencyResolver.swift */; };
-		06CD8CE22AFADAC500C22E7F /* InjectionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD8CE12AFADAC500C22E7F /* InjectionBundle.swift */; };
-		06CD8CE42AFADBAA00C22E7F /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD8CE32AFADBAA00C22E7F /* Injected.swift */; };
-		06CD8CE62AFADBC600C22E7F /* InjectedObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD8CE52AFADBC600C22E7F /* InjectedObservable.swift */; };
-		06CD8CEF2AFAE09600C22E7F /* FFDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 06CD8CEE2AFAE09600C22E7F /* FFDomain */; };
+		06E3E8D92B5B19A100B0984B /* ComposableUseCase in Frameworks */ = {isa = PBXBuildFile; productRef = 06E3E8D82B5B19A100B0984B /* ComposableUseCase */; };
+		06E3E8DB2B5B1F2900B0984B /* UseCaseItem in Frameworks */ = {isa = PBXBuildFile; productRef = 06E3E8DA2B5B1F2900B0984B /* UseCaseItem */; };
+		06E3E8DD2B5B1F3900B0984B /* UseCaseItemLive in Frameworks */ = {isa = PBXBuildFile; productRef = 06E3E8DC2B5B1F3900B0984B /* UseCaseItemLive */; };
+		06E3E8E02B5B2F8C00B0984B /* KeychainedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E3E8DF2B5B2F8C00B0984B /* KeychainedValues.swift */; };
 		06EFC02F2AE96AAB00BDAF1D /* FinFeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC02E2AE96AAB00BDAF1D /* FinFeatherApp.swift */; };
-		06EFC0312AE96AAB00BDAF1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC0302AE96AAB00BDAF1D /* ContentView.swift */; };
+		06EFC0312AE96AAB00BDAF1D /* ViewItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC0302AE96AAB00BDAF1D /* ViewItems.swift */; };
 		06EFC0352AE96AAC00BDAF1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06EFC0342AE96AAC00BDAF1D /* Assets.xcassets */; };
 		06EFC0392AE96AAC00BDAF1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06EFC0382AE96AAC00BDAF1D /* Preview Assets.xcassets */; };
-		06EFC04E2AE96AAC00BDAF1D /* FinFeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC04D2AE96AAC00BDAF1D /* FinFeatherUITests.swift */; };
-		06EFC0502AE96AAC00BDAF1D /* FinFeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC04F2AE96AAC00BDAF1D /* FinFeatherUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,35 +42,27 @@
 			remoteGlobalIDString = 06EFC02A2AE96AAB00BDAF1D;
 			remoteInfo = FinFeather;
 		};
-		06EFC04A2AE96AAC00BDAF1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 06EFC0232AE96AAB00BDAF1D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 06EFC02A2AE96AAB00BDAF1D;
-			remoteInfo = FinFeather;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		065061FA2B4463DD00044955 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		062F4DD22B5851C40001915D /* App+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Injection.swift"; sourceTree = "<group>"; };
+		062F4DD42B5858670001915D /* ModelContainer+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelContainer+Injection.swift"; sourceTree = "<group>"; };
+		062F4DD62B5862240001915D /* UseCaseItem+Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UseCaseItem+Dependency.swift"; sourceTree = "<group>"; };
+		062F4DD92B5870D50001915D /* FeatureItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureItems.swift; sourceTree = "<group>"; };
 		0659D7832AED23F500C0D5B6 /* Keychained.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychained.swift; sourceTree = "<group>"; };
+		06A1E7842B5AA2EC00AA3B1A /* SwiftDataRepository+Dependecy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftDataRepository+Dependecy.swift"; sourceTree = "<group>"; };
+		06B80A102B59B26E00B31145 /* FeatureItemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureItemsTests.swift; sourceTree = "<group>"; };
 		06C5D1072AEDD03A00457EF8 /* FFKeychainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFKeychainTests.swift; sourceTree = "<group>"; };
 		06C5D10C2AEDD4F500457EF8 /* KeychainedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainedTests.swift; sourceTree = "<group>"; };
-		06CD8CDF2AFADAAF00C22E7F /* DependencyResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyResolver.swift; sourceTree = "<group>"; };
-		06CD8CE12AFADAC500C22E7F /* InjectionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionBundle.swift; sourceTree = "<group>"; };
-		06CD8CE32AFADBAA00C22E7F /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
-		06CD8CE52AFADBC600C22E7F /* InjectedObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedObservable.swift; sourceTree = "<group>"; };
+		06E3E8DF2B5B2F8C00B0984B /* KeychainedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainedValues.swift; sourceTree = "<group>"; };
 		06EFC02B2AE96AAB00BDAF1D /* FinFeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinFeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EFC02E2AE96AAB00BDAF1D /* FinFeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinFeatherApp.swift; sourceTree = "<group>"; };
-		06EFC0302AE96AAB00BDAF1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		06EFC0302AE96AAB00BDAF1D /* ViewItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItems.swift; sourceTree = "<group>"; };
 		06EFC0342AE96AAC00BDAF1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06EFC0362AE96AAC00BDAF1D /* FinFeather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinFeather.entitlements; sourceTree = "<group>"; };
 		06EFC0382AE96AAC00BDAF1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		06EFC03A2AE96AAC00BDAF1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06EFC03F2AE96AAC00BDAF1D /* FinFeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinFeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		06EFC0492AE96AAC00BDAF1D /* FinFeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinFeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		06EFC04D2AE96AAC00BDAF1D /* FinFeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinFeatherUITests.swift; sourceTree = "<group>"; };
-		06EFC04F2AE96AAC00BDAF1D /* FinFeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinFeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +70,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				065061F92B4462CA00044955 /* FFMVVM in Frameworks */,
-				06CD8CEF2AFAE09600C22E7F /* FFDomain in Frameworks */,
+				062F4DCE2B5839140001915D /* ComposableArchitecture in Frameworks */,
+				06E3E8D92B5B19A100B0984B /* ComposableUseCase in Frameworks */,
 				06C5D0FC2AEDB65F00457EF8 /* FFKeychain in Frameworks */,
+				06E3E8DD2B5B1F3900B0984B /* UseCaseItemLive in Frameworks */,
+				062F4DD12B5840070001915D /* Resolver in Frameworks */,
 				06C5D0FA2AEDB65B00457EF8 /* FFDataSource in Frameworks */,
+				06BC83B62B5B07850074849A /* ComposableRepositoriesLive in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,26 +85,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				06C5D1042AEDCF7A00457EF8 /* FFKeychain in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		06EFC0462AE96AAC00BDAF1D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				06BC83B42B5B07850074849A /* ComposableRepositories in Frameworks */,
+				06B80A1A2B59C43600B31145 /* FFDataSource in Frameworks */,
+				06E3E8DB2B5B1F2900B0984B /* UseCaseItem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		065061F52B445D6200044955 /* Screens */ = {
+		062F4DD82B5870A80001915D /* Items */ = {
 			isa = PBXGroup;
 			children = (
-				06EFC0302AE96AAB00BDAF1D /* ContentView.swift */,
-				065061FA2B4463DD00044955 /* ContentViewModel.swift */,
+				06EFC0302AE96AAB00BDAF1D /* ViewItems.swift */,
 			);
-			path = Screens;
+			path = Items;
+			sourceTree = "<group>";
+		};
+		065061F52B445D6200044955 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				062F4DD82B5870A80001915D /* Items */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0659D77B2AED201600C0D5B6 /* Application */ = {
@@ -126,19 +130,67 @@
 		0659D78A2AED291D00C0D5B6 /* Property Wrappers */ = {
 			isa = PBXGroup;
 			children = (
-				06CD8CE32AFADBAA00C22E7F /* Injected.swift */,
-				06CD8CE52AFADBC600C22E7F /* InjectedObservable.swift */,
-				0659D7832AED23F500C0D5B6 /* Keychained.swift */,
+				06E3E8DE2B5B2F7700B0984B /* Keychained */,
 			);
 			path = "Property Wrappers";
 			sourceTree = "<group>";
 		};
-		06C5D1052AEDD00300457EF8 /* Frameworks */ = {
+		06A1E7862B5AA30900AA3B1A /* Resolver */ = {
+			isa = PBXGroup;
+			children = (
+				062F4DD22B5851C40001915D /* App+Injection.swift */,
+				062F4DD42B5858670001915D /* ModelContainer+Injection.swift */,
+			);
+			path = Resolver;
+			sourceTree = "<group>";
+		};
+		06A1E7872B5AA31500AA3B1A /* Composable Architecture Dependecy */ = {
+			isa = PBXGroup;
+			children = (
+				06A1E7842B5AA2EC00AA3B1A /* SwiftDataRepository+Dependecy.swift */,
+				062F4DD62B5862240001915D /* UseCaseItem+Dependency.swift */,
+			);
+			path = "Composable Architecture Dependecy";
+			sourceTree = "<group>";
+		};
+		06B80A0E2B59B20300B31145 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				06B80A0F2B59B21500B31145 /* Items */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		06B80A0F2B59B21500B31145 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				06B80A102B59B26E00B31145 /* FeatureItemsTests.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		06B80A122B59B2A700B31145 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				06B80A132B59B2B800B31145 /* Items */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		06B80A132B59B2B800B31145 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				062F4DD92B5870D50001915D /* FeatureItems.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		06C5D1052AEDD00300457EF8 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
 				06C5D1062AEDD01200457EF8 /* FFKeychain */,
 			);
-			path = Frameworks;
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 		06C5D1062AEDD01200457EF8 /* FFKeychain */ = {
@@ -153,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				06C5D10A2AEDD4DA00457EF8 /* Common */,
+				06B80A0E2B59B20300B31145 /* Features */,
 			);
 			path = FinFeather;
 			sourceTree = "<group>";
@@ -176,8 +229,8 @@
 		06CD8CDC2AFAD46700C22E7F /* Dependency Injection */ = {
 			isa = PBXGroup;
 			children = (
-				06CD8CDF2AFADAAF00C22E7F /* DependencyResolver.swift */,
-				06CD8CE12AFADAC500C22E7F /* InjectionBundle.swift */,
+				06A1E7872B5AA31500AA3B1A /* Composable Architecture Dependecy */,
+				06A1E7862B5AA30900AA3B1A /* Resolver */,
 			);
 			path = "Dependency Injection";
 			sourceTree = "<group>";
@@ -189,12 +242,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		06E3E8DE2B5B2F7700B0984B /* Keychained */ = {
+			isa = PBXGroup;
+			children = (
+				0659D7832AED23F500C0D5B6 /* Keychained.swift */,
+				06E3E8DF2B5B2F8C00B0984B /* KeychainedValues.swift */,
+			);
+			path = Keychained;
+			sourceTree = "<group>";
+		};
 		06EFC0222AE96AAB00BDAF1D = {
 			isa = PBXGroup;
 			children = (
 				06EFC02D2AE96AAB00BDAF1D /* FinFeather */,
 				06EFC0422AE96AAC00BDAF1D /* FinFeatherTests */,
-				06EFC04C2AE96AAC00BDAF1D /* FinFeatherUITests */,
 				06EFC02C2AE96AAB00BDAF1D /* Products */,
 				06CD8CED2AFAE09600C22E7F /* Frameworks */,
 			);
@@ -205,7 +266,6 @@
 			children = (
 				06EFC02B2AE96AAB00BDAF1D /* FinFeather.app */,
 				06EFC03F2AE96AAC00BDAF1D /* FinFeatherTests.xctest */,
-				06EFC0492AE96AAC00BDAF1D /* FinFeatherUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,7 +275,8 @@
 			children = (
 				0659D77B2AED201600C0D5B6 /* Application */,
 				0659D77E2AED219E00C0D5B6 /* Common */,
-				065061F52B445D6200044955 /* Screens */,
+				06B80A122B59B2A700B31145 /* Features */,
+				065061F52B445D6200044955 /* Views */,
 				06EFC0342AE96AAC00BDAF1D /* Assets.xcassets */,
 				06EFC0362AE96AAC00BDAF1D /* FinFeather.entitlements */,
 				06EFC03A2AE96AAC00BDAF1D /* Info.plist */,
@@ -236,18 +297,9 @@
 			isa = PBXGroup;
 			children = (
 				06C5D1092AEDD4CB00457EF8 /* FinFeather */,
-				06C5D1052AEDD00300457EF8 /* Frameworks */,
+				06C5D1052AEDD00300457EF8 /* Dependencies */,
 			);
 			path = FinFeatherTests;
-			sourceTree = "<group>";
-		};
-		06EFC04C2AE96AAC00BDAF1D /* FinFeatherUITests */ = {
-			isa = PBXGroup;
-			children = (
-				06EFC04D2AE96AAC00BDAF1D /* FinFeatherUITests.swift */,
-				06EFC04F2AE96AAC00BDAF1D /* FinFeatherUITestsLaunchTests.swift */,
-			);
-			path = FinFeatherUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,8 +321,11 @@
 			packageProductDependencies = (
 				06C5D0F92AEDB65B00457EF8 /* FFDataSource */,
 				06C5D0FB2AEDB65F00457EF8 /* FFKeychain */,
-				06CD8CEE2AFAE09600C22E7F /* FFDomain */,
-				065061F82B4462CA00044955 /* FFMVVM */,
+				062F4DCD2B5839140001915D /* ComposableArchitecture */,
+				062F4DD02B5840070001915D /* Resolver */,
+				06BC83B52B5B07850074849A /* ComposableRepositoriesLive */,
+				06E3E8D82B5B19A100B0984B /* ComposableUseCase */,
+				06E3E8DC2B5B1F3900B0984B /* UseCaseItemLive */,
 			);
 			productName = FinFeather;
 			productReference = 06EFC02B2AE96AAB00BDAF1D /* FinFeather.app */;
@@ -292,28 +347,13 @@
 			name = FinFeatherTests;
 			packageProductDependencies = (
 				06C5D1032AEDCF7A00457EF8 /* FFKeychain */,
+				06B80A192B59C43600B31145 /* FFDataSource */,
+				06BC83B32B5B07850074849A /* ComposableRepositories */,
+				06E3E8DA2B5B1F2900B0984B /* UseCaseItem */,
 			);
 			productName = FinFeatherTests;
 			productReference = 06EFC03F2AE96AAC00BDAF1D /* FinFeatherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		06EFC0482AE96AAC00BDAF1D /* FinFeatherUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 06EFC0592AE96AAC00BDAF1D /* Build configuration list for PBXNativeTarget "FinFeatherUITests" */;
-			buildPhases = (
-				06EFC0452AE96AAC00BDAF1D /* Sources */,
-				06EFC0462AE96AAC00BDAF1D /* Frameworks */,
-				06EFC0472AE96AAC00BDAF1D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				06EFC04B2AE96AAC00BDAF1D /* PBXTargetDependency */,
-			);
-			name = FinFeatherUITests;
-			productName = FinFeatherUITests;
-			productReference = 06EFC0492AE96AAC00BDAF1D /* FinFeatherUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -332,10 +372,6 @@
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = 06EFC02A2AE96AAB00BDAF1D;
 					};
-					06EFC0482AE96AAC00BDAF1D = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = 06EFC02A2AE96AAB00BDAF1D;
-					};
 				};
 			};
 			buildConfigurationList = 06EFC0262AE96AAB00BDAF1D /* Build configuration list for PBXProject "FinFeather" */;
@@ -347,13 +383,18 @@
 				Base,
 			);
 			mainGroup = 06EFC0222AE96AAB00BDAF1D;
+			packageReferences = (
+				062F4DCC2B5839140001915D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				062F4DCF2B5840070001915D /* XCRemoteSwiftPackageReference "Resolver" */,
+				06BC83B22B5B07850074849A /* XCRemoteSwiftPackageReference "swift-composable-repositories" */,
+				06E3E8D72B5B19A100B0984B /* XCRemoteSwiftPackageReference "swift-composable-use-case" */,
+			);
 			productRefGroup = 06EFC02C2AE96AAB00BDAF1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				06EFC02A2AE96AAB00BDAF1D /* FinFeather */,
 				06EFC03E2AE96AAC00BDAF1D /* FinFeatherTests */,
-				06EFC0482AE96AAC00BDAF1D /* FinFeatherUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -375,13 +416,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		06EFC0472AE96AAC00BDAF1D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -389,14 +423,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				065061FB2B4463DD00044955 /* ContentViewModel.swift in Sources */,
-				06EFC0312AE96AAB00BDAF1D /* ContentView.swift in Sources */,
-				06CD8CE42AFADBAA00C22E7F /* Injected.swift in Sources */,
+				06EFC0312AE96AAB00BDAF1D /* ViewItems.swift in Sources */,
+				06A1E7852B5AA2EC00AA3B1A /* SwiftDataRepository+Dependecy.swift in Sources */,
+				062F4DD72B5862240001915D /* UseCaseItem+Dependency.swift in Sources */,
+				062F4DDA2B5870D50001915D /* FeatureItems.swift in Sources */,
+				062F4DD52B5858670001915D /* ModelContainer+Injection.swift in Sources */,
 				0659D7842AED23F500C0D5B6 /* Keychained.swift in Sources */,
-				06CD8CE22AFADAC500C22E7F /* InjectionBundle.swift in Sources */,
+				06E3E8E02B5B2F8C00B0984B /* KeychainedValues.swift in Sources */,
+				062F4DD32B5851C40001915D /* App+Injection.swift in Sources */,
 				06EFC02F2AE96AAB00BDAF1D /* FinFeatherApp.swift in Sources */,
-				06CD8CE62AFADBC600C22E7F /* InjectedObservable.swift in Sources */,
-				06CD8CE02AFADAAF00C22E7F /* DependencyResolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,17 +439,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06B80A112B59B26E00B31145 /* FeatureItemsTests.swift in Sources */,
 				06C5D10D2AEDD4F500457EF8 /* KeychainedTests.swift in Sources */,
 				06C5D1082AEDD03A00457EF8 /* FFKeychainTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		06EFC0452AE96AAC00BDAF1D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				06EFC0502AE96AAC00BDAF1D /* FinFeatherUITestsLaunchTests.swift in Sources */,
-				06EFC04E2AE96AAC00BDAF1D /* FinFeatherUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +452,6 @@
 			isa = PBXTargetDependency;
 			target = 06EFC02A2AE96AAB00BDAF1D /* FinFeather */;
 			targetProxy = 06EFC0402AE96AAC00BDAF1D /* PBXContainerItemProxy */;
-		};
-		06EFC04B2AE96AAC00BDAF1D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 06EFC02A2AE96AAB00BDAF1D /* FinFeather */;
-			targetProxy = 06EFC04A2AE96AAC00BDAF1D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -690,52 +712,6 @@
 			};
 			name = Release;
 		};
-		06EFC05A2AE96AAC00BDAF1D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 2ZK2BA5X87;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yantsybaiev.dmytro.FinFeatherUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FinFeather;
-			};
-			name = Debug;
-		};
-		06EFC05B2AE96AAC00BDAF1D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 2ZK2BA5X87;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yantsybaiev.dmytro.FinFeatherUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FinFeather;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -766,21 +742,67 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		06EFC0592AE96AAC00BDAF1D /* Build configuration list for PBXNativeTarget "FinFeatherUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				06EFC05A2AE96AAC00BDAF1D /* Debug */,
-				06EFC05B2AE96AAC00BDAF1D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		062F4DCC2B5839140001915D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.6.0;
+			};
+		};
+		062F4DCF2B5840070001915D /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+		06BC83B22B5B07850074849A /* XCRemoteSwiftPackageReference "swift-composable-repositories" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-yantsybaiev/swift-composable-repositories.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+		06E3E8D72B5B19A100B0984B /* XCRemoteSwiftPackageReference "swift-composable-use-case" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:dmytro-yantsybaiev/swift-composable-use-case.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		065061F82B4462CA00044955 /* FFMVVM */ = {
+		062F4DCD2B5839140001915D /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = FFMVVM;
+			package = 062F4DCC2B5839140001915D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		062F4DD02B5840070001915D /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 062F4DCF2B5840070001915D /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+		06B80A192B59C43600B31145 /* FFDataSource */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FFDataSource;
+		};
+		06BC83B32B5B07850074849A /* ComposableRepositories */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06BC83B22B5B07850074849A /* XCRemoteSwiftPackageReference "swift-composable-repositories" */;
+			productName = ComposableRepositories;
+		};
+		06BC83B52B5B07850074849A /* ComposableRepositoriesLive */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06BC83B22B5B07850074849A /* XCRemoteSwiftPackageReference "swift-composable-repositories" */;
+			productName = ComposableRepositoriesLive;
 		};
 		06C5D0F92AEDB65B00457EF8 /* FFDataSource */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -794,9 +816,18 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = FFKeychain;
 		};
-		06CD8CEE2AFAE09600C22E7F /* FFDomain */ = {
+		06E3E8D82B5B19A100B0984B /* ComposableUseCase */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = FFDomain;
+			package = 06E3E8D72B5B19A100B0984B /* XCRemoteSwiftPackageReference "swift-composable-use-case" */;
+			productName = ComposableUseCase;
+		};
+		06E3E8DA2B5B1F2900B0984B /* UseCaseItem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UseCaseItem;
+		};
+		06E3E8DC2B5B1F3900B0984B /* UseCaseItemLive */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UseCaseItemLive;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

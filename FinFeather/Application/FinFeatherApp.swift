@@ -6,27 +6,17 @@
 //
 
 import SwiftUI
-import FFDomain
+import ComposableArchitecture
+import Resolver
 
 @main
 struct FinFeatherApp: App {
 
+    private static let store = Store(initialState: FeatureItems.State(), reducer: { FeatureItems() })
+
     var body: some Scene {
         WindowGroup {
-            ContentView(ContentViewModel())
-        }
-    }
-
-    init() {
-        InjectionBundle.load { resolver in
-
-            // Common
-            resolver.single { SwiftDataRepository() }
-
-            // Use Cases
-            resolver.factory { AddItemUseCase(repository: resolver.resolve()) }
-            resolver.factory { RemoveItemUseCase(repository: resolver.resolve()) }
-            resolver.factory { FetchItemsUseCase(repository: resolver.resolve()) }
+            ViewItems(FinFeatherApp.store)
         }
     }
 }

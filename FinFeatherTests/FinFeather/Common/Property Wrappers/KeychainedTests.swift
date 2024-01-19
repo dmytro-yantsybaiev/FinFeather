@@ -5,48 +5,59 @@
 //  Created by Dmytro Yantsybaiev on 29.10.2023.
 //
 
+@testable import FinFeather
+
 import XCTest
 import FFKeychain
-@testable import FinFeather
 
 final class KeychainedTests: XCTestCase {
 
-    @Keychained(.test) private var testItem: String?
+    @Keychained(\.test) private var keychainedItem: String?
+
+    override func setUp() {
+        super.setUp()
+    }
 
     override func tearDown() {
         super.tearDown()
-        FFKeychain.shared.deleteItem(key: .test)
+        FFKeychain.shared.deleteItem(key: KeychainedValues.shared.test)
     }
 
-    func testInitialItem() {
-        XCTAssertNil(testItem)
+    func test_initial_item() {
+        XCTAssertNil(keychainedItem)
     }
 
-    func testSetItem() {
+    func test_set_item() {
         let itemToSet: String = "itemToSet"
-        testItem = itemToSet
-        XCTAssertEqual(itemToSet, FFKeychain.shared.loadItem(key: .test) as String?)
+        keychainedItem = itemToSet
+        XCTAssertEqual(itemToSet, FFKeychain.shared.loadItem(key: KeychainedValues.shared.test) as String?)
     }
 
-    func testGetItem() {
-        testItem = "itemToGet"
-        let keychainedItem: String? = FFKeychain.shared.loadItem(key: .test)
+    func test_get_tem() {
+        keychainedItem = "itemToGet"
+        let keychainedItem: String? = FFKeychain.shared.loadItem(key: KeychainedValues.shared.test)
         XCTAssertNotNil(keychainedItem)
-        XCTAssertEqual(testItem, keychainedItem)
+        XCTAssertEqual(keychainedItem, keychainedItem)
     }
 
-    func testUpdateItem() {
+    func test_update_item() {
         let itemToSet: String = "itemToSet"
         let itemToUpdate: String = "itemToUpdate"
-        testItem = itemToSet
-        testItem = itemToUpdate
-        XCTAssertEqual(itemToUpdate, FFKeychain.shared.loadItem(key: .test) as String?)
+        keychainedItem = itemToSet
+        keychainedItem = itemToUpdate
+        XCTAssertEqual(itemToUpdate, FFKeychain.shared.loadItem(key: KeychainedValues.shared.test) as String?)
     }
 
-    func testDeleteItem() {
-        testItem = "itemToSet"
-        XCTAssertNotNil(FFKeychain.shared.loadItem(key: .test) as String?)
-        testItem = nil
-        XCTAssertNil(FFKeychain.shared.loadItem(key: .test) as String?)
+    func test_delete_item() {
+        keychainedItem = "itemToSet"
+        XCTAssertNotNil(FFKeychain.shared.loadItem(key: KeychainedValues.shared.test) as String?)
+        keychainedItem = nil
+        XCTAssertNil(FFKeychain.shared.loadItem(key: KeychainedValues.shared.test) as String?)
     }
 }
+
+private extension KeychainedValues {
+
+    var test: String { "test" }
+}
+

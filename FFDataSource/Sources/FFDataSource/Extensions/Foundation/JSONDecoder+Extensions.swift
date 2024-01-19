@@ -9,5 +9,5 @@ import Foundation
 
 public extension JSONDecoder {
 
-    static let shared: JSONDecoder = .init()
+    static let shared = JSONDecoder()
 }
