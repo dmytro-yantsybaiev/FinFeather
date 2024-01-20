@@ -9,9 +9,9 @@ import SwiftData
 import FFDataSource
 import Resolver
 
+@MainActor
 extension Resolver {
 
-    @MainActor
     static func registerModelContainer() {
         register {
             do {

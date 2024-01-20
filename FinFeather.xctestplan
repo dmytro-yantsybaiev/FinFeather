@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "0107962D-1C1E-49C3-A1FC-EC0CE2F71DD0",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:FinFeather.xcodeproj",
+      "identifier" : "06EFC02A2AE96AAB00BDAF1D",
+      "name" : "FinFeather"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:FinFeather.xcodeproj",
+        "identifier" : "06EFC03E2AE96AAC00BDAF1D",
+        "name" : "FinFeatherTests"
+      }
+    }
+  ],
+  "version" : 1
+}

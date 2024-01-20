@@ -59,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dmytro-yantsybaiev/swift-composable-repositories.git",
       "state" : {
-        "revision" : "c6991368d2bb714352d4683cbfef7e845cfffb11",
-        "version" : "0.1.1"
+        "revision" : "294bf9893c591f99f4fb6eaea962542d23ed24ed",
+        "version" : "0.1.2"
       }
     },
     {

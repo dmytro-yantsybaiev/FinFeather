@@ -12,7 +12,7 @@ import Resolver
 @main
 struct FinFeatherApp: App {
 
-    private static let store = Store(initialState: FeatureItems.State(), reducer: { FeatureItems() })
+    private static let store: StoreOf<FeatureItems> = Resolver.resolve()
 
     var body: some Scene {
         WindowGroup {

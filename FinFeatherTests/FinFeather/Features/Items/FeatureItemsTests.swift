@@ -12,17 +12,15 @@ import Combine
 import FFDataSource
 import UseCaseItem
 import ComposableArchitecture
-import Resolver
 
 @MainActor
-final class FeatureItemsTests: XCTestCase {
+final class FeatureItemsTests: XCTestCaseBase {
 
     func test_didTapAddItemButton_action() async {
         let item = Item()
         let store = TestStore(initialState: FeatureItems.State()) {
             FeatureItems()
         } withDependencies: {
-            $0.useCaseItem = UseCaseItem.mock
             $0.useCaseItem.insert = { _ in Deferred { Future { $0(.success(item)) } }.eraseToAnyPublisher() }
         }
 
@@ -32,12 +30,9 @@ final class FeatureItemsTests: XCTestCase {
 
     func test_didDeleteItemAtIndex_action() async {
         let itemIndex = 0
-        let items = [Item(), Item(), Item()]
+        let items = Array(repeating: Item(), count: 3)
         let store = TestStore(initialState: FeatureItems.State(items: items)) {
             FeatureItems()
-        } withDependencies: {
-            $0.useCaseItem = UseCaseItem.mock
-            $0.useCaseItem.delete = { item in Deferred { Future { $0(.success(item)) } }.eraseToAnyPublisher() }
         }
 
         await store.send(.didDeleteItemAt(itemIndex))
@@ -49,7 +44,6 @@ final class FeatureItemsTests: XCTestCase {
         let store = TestStore(initialState: FeatureItems.State()) {
             FeatureItems()
         } withDependencies: {
-            $0.useCaseItem = UseCaseItem.mock
             $0.useCaseItem.fetch = { _ in Deferred { Future { $0(.success(items)) } }.eraseToAnyPublisher() }
         }
 

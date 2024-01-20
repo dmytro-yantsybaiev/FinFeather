@@ -15,7 +15,7 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "FFDataSource", path: "../FFDataSource"),
-        .package(url: "https://github.com/dmytro-yantsybaiev/swift-composable-repositories.git", .upToNextMinor(from: Version("0.1.1"))),
+        .package(url: "https://github.com/dmytro-yantsybaiev/swift-composable-repositories.git", .upToNextMinor(from: Version("0.1.2"))),
         .package(url: "https://github.com/dmytro-yantsybaiev/swift-composable-use-case.git", .upToNextMinor(from: Version("0.1.0"))),
     ],
     targets: [

@@ -13,9 +13,11 @@
 		062F4DD52B5858670001915D /* ModelContainer+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F4DD42B5858670001915D /* ModelContainer+Injection.swift */; };
 		062F4DD72B5862240001915D /* UseCaseItem+Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F4DD62B5862240001915D /* UseCaseItem+Dependency.swift */; };
 		062F4DDA2B5870D50001915D /* FeatureItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F4DD92B5870D50001915D /* FeatureItems.swift */; };
+		0653798A2B5BDDE2008056EF /* FinFeather.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 065379892B5BDDE2008056EF /* FinFeather.xctestplan */; };
+		0653798C2B5BE07C008056EF /* XCTestCaseBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653798B2B5BE07C008056EF /* XCTestCaseBase.swift */; };
+		0653798E2B5BE669008056EF /* SwiftDataRepository+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653798D2B5BE669008056EF /* SwiftDataRepository+Injection.swift */; };
 		0659D7842AED23F500C0D5B6 /* Keychained.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0659D7832AED23F500C0D5B6 /* Keychained.swift */; };
 		068D14592B5B4B9100894CD1 /* ComposableUseCase in Frameworks */ = {isa = PBXBuildFile; productRef = 068D14582B5B4B9100894CD1 /* ComposableUseCase */; };
-		06A1E7852B5AA2EC00AA3B1A /* SwiftDataRepository+Dependecy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1E7842B5AA2EC00AA3B1A /* SwiftDataRepository+Dependecy.swift */; };
 		06B80A112B59B26E00B31145 /* FeatureItemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B80A102B59B26E00B31145 /* FeatureItemsTests.swift */; };
 		06B80A1A2B59C43600B31145 /* FFDataSource in Frameworks */ = {isa = PBXBuildFile; productRef = 06B80A192B59C43600B31145 /* FFDataSource */; };
 		06BC83B42B5B07850074849A /* ComposableRepositories in Frameworks */ = {isa = PBXBuildFile; productRef = 06BC83B32B5B07850074849A /* ComposableRepositories */; };
@@ -29,7 +31,6 @@
 		06E3E8DD2B5B1F3900B0984B /* UseCaseItemLive in Frameworks */ = {isa = PBXBuildFile; productRef = 06E3E8DC2B5B1F3900B0984B /* UseCaseItemLive */; };
 		06E3E8E02B5B2F8C00B0984B /* KeychainedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E3E8DF2B5B2F8C00B0984B /* KeychainedValues.swift */; };
 		06EFC02F2AE96AAB00BDAF1D /* FinFeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC02E2AE96AAB00BDAF1D /* FinFeatherApp.swift */; };
-		06EFC0312AE96AAB00BDAF1D /* ViewItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFC0302AE96AAB00BDAF1D /* ViewItems.swift */; };
 		06EFC0352AE96AAC00BDAF1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06EFC0342AE96AAC00BDAF1D /* Assets.xcassets */; };
 		06EFC0392AE96AAC00BDAF1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06EFC0382AE96AAC00BDAF1D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -49,15 +50,16 @@
 		062F4DD42B5858670001915D /* ModelContainer+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelContainer+Injection.swift"; sourceTree = "<group>"; };
 		062F4DD62B5862240001915D /* UseCaseItem+Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UseCaseItem+Dependency.swift"; sourceTree = "<group>"; };
 		062F4DD92B5870D50001915D /* FeatureItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureItems.swift; sourceTree = "<group>"; };
+		065379892B5BDDE2008056EF /* FinFeather.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FinFeather.xctestplan; sourceTree = SOURCE_ROOT; };
+		0653798B2B5BE07C008056EF /* XCTestCaseBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseBase.swift; sourceTree = "<group>"; };
+		0653798D2B5BE669008056EF /* SwiftDataRepository+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftDataRepository+Injection.swift"; sourceTree = "<group>"; };
 		0659D7832AED23F500C0D5B6 /* Keychained.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychained.swift; sourceTree = "<group>"; };
-		06A1E7842B5AA2EC00AA3B1A /* SwiftDataRepository+Dependecy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftDataRepository+Dependecy.swift"; sourceTree = "<group>"; };
 		06B80A102B59B26E00B31145 /* FeatureItemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureItemsTests.swift; sourceTree = "<group>"; };
 		06C5D1072AEDD03A00457EF8 /* FFKeychainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFKeychainTests.swift; sourceTree = "<group>"; };
 		06C5D10C2AEDD4F500457EF8 /* KeychainedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainedTests.swift; sourceTree = "<group>"; };
 		06E3E8DF2B5B2F8C00B0984B /* KeychainedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainedValues.swift; sourceTree = "<group>"; };
 		06EFC02B2AE96AAB00BDAF1D /* FinFeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinFeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EFC02E2AE96AAB00BDAF1D /* FinFeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinFeatherApp.swift; sourceTree = "<group>"; };
-		06EFC0302AE96AAB00BDAF1D /* ViewItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItems.swift; sourceTree = "<group>"; };
 		06EFC0342AE96AAC00BDAF1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06EFC0362AE96AAC00BDAF1D /* FinFeather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinFeather.entitlements; sourceTree = "<group>"; };
 		06EFC0382AE96AAC00BDAF1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -94,22 +96,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		062F4DD82B5870A80001915D /* Items */ = {
-			isa = PBXGroup;
-			children = (
-				06EFC0302AE96AAB00BDAF1D /* ViewItems.swift */,
-			);
-			path = Items;
-			sourceTree = "<group>";
-		};
-		065061F52B445D6200044955 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				062F4DD82B5870A80001915D /* Items */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		0659D77B2AED201600C0D5B6 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,17 +126,17 @@
 			children = (
 				062F4DD22B5851C40001915D /* App+Injection.swift */,
 				062F4DD42B5858670001915D /* ModelContainer+Injection.swift */,
+				0653798D2B5BE669008056EF /* SwiftDataRepository+Injection.swift */,
 			);
 			path = Resolver;
 			sourceTree = "<group>";
 		};
-		06A1E7872B5AA31500AA3B1A /* Composable Architecture Dependecy */ = {
+		06A1E7872B5AA31500AA3B1A /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
-				06A1E7842B5AA2EC00AA3B1A /* SwiftDataRepository+Dependecy.swift */,
 				062F4DD62B5862240001915D /* UseCaseItem+Dependency.swift */,
 			);
-			path = "Composable Architecture Dependecy";
+			path = Dependency;
 			sourceTree = "<group>";
 		};
 		06B80A0E2B59B20300B31145 /* Features */ = {
@@ -204,6 +190,7 @@
 		06C5D1092AEDD4CB00457EF8 /* FinFeather */ = {
 			isa = PBXGroup;
 			children = (
+				0653798B2B5BE07C008056EF /* XCTestCaseBase.swift */,
 				06C5D10A2AEDD4DA00457EF8 /* Common */,
 				06B80A0E2B59B20300B31145 /* Features */,
 			);
@@ -229,7 +216,7 @@
 		06CD8CDC2AFAD46700C22E7F /* Dependency Injection */ = {
 			isa = PBXGroup;
 			children = (
-				06A1E7872B5AA31500AA3B1A /* Composable Architecture Dependecy */,
+				06A1E7872B5AA31500AA3B1A /* Dependency */,
 				06A1E7862B5AA30900AA3B1A /* Resolver */,
 			);
 			path = "Dependency Injection";
@@ -276,9 +263,9 @@
 				0659D77B2AED201600C0D5B6 /* Application */,
 				0659D77E2AED219E00C0D5B6 /* Common */,
 				06B80A122B59B2A700B31145 /* Features */,
-				065061F52B445D6200044955 /* Views */,
 				06EFC0342AE96AAC00BDAF1D /* Assets.xcassets */,
 				06EFC0362AE96AAC00BDAF1D /* FinFeather.entitlements */,
+				065379892B5BDDE2008056EF /* FinFeather.xctestplan */,
 				06EFC03A2AE96AAC00BDAF1D /* Info.plist */,
 				06EFC0372AE96AAC00BDAF1D /* Preview Content */,
 			);
@@ -405,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06EFC0392AE96AAC00BDAF1D /* Preview Assets.xcassets in Resources */,
+				0653798A2B5BDDE2008056EF /* FinFeather.xctestplan in Resources */,
 				06EFC0352AE96AAC00BDAF1D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,14 +411,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06EFC0312AE96AAB00BDAF1D /* ViewItems.swift in Sources */,
-				06A1E7852B5AA2EC00AA3B1A /* SwiftDataRepository+Dependecy.swift in Sources */,
 				062F4DD72B5862240001915D /* UseCaseItem+Dependency.swift in Sources */,
 				062F4DDA2B5870D50001915D /* FeatureItems.swift in Sources */,
 				062F4DD52B5858670001915D /* ModelContainer+Injection.swift in Sources */,
 				0659D7842AED23F500C0D5B6 /* Keychained.swift in Sources */,
 				06E3E8E02B5B2F8C00B0984B /* KeychainedValues.swift in Sources */,
 				062F4DD32B5851C40001915D /* App+Injection.swift in Sources */,
+				0653798E2B5BE669008056EF /* SwiftDataRepository+Injection.swift in Sources */,
 				06EFC02F2AE96AAB00BDAF1D /* FinFeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06B80A112B59B26E00B31145 /* FeatureItemsTests.swift in Sources */,
+				0653798C2B5BE07C008056EF /* XCTestCaseBase.swift in Sources */,
 				06C5D10D2AEDD4F500457EF8 /* KeychainedTests.swift in Sources */,
 				06C5D1082AEDD03A00457EF8 /* FFKeychainTests.swift in Sources */,
 			);
@@ -774,7 +762,7 @@
 			repositoryURL = "https://github.com/dmytro-yantsybaiev/swift-composable-repositories.git";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 0.1.1;
+				minimumVersion = 0.1.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

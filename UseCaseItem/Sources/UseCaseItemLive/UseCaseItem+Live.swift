@@ -18,7 +18,7 @@ private let receiveDispatcher = DispatchQueue.main
 
 extension UseCaseItem {
 
-    public static func live(repository: SwiftDataRepository<Item>) -> Self {
+    public static func live(repository: RepositorySwiftData<Item>) -> Self {
         Self(
             insert: useCaseInsertItem(repository).execute,
             delete: useCaseDeleteItem(repository).execute,
@@ -26,7 +26,7 @@ extension UseCaseItem {
         )
     }
 
-    private static func useCaseInsertItem(_ repository: SwiftDataRepository<Item>) -> ComposableUseCase<Item, Item> {
+    private static func useCaseInsertItem(_ repository: RepositorySwiftData<Item>) -> ComposableUseCase<Item, Item> {
         ComposableUseCase<Item, Item> { item in
             do {
                 try repository.insert(item)
@@ -41,7 +41,7 @@ extension UseCaseItem {
         }
     }
 
-    private static func useCaseDeleteItem(_ repository: SwiftDataRepository<Item>) -> ComposableUseCase<Item, Item> {
+    private static func useCaseDeleteItem(_ repository: RepositorySwiftData<Item>) -> ComposableUseCase<Item, Item> {
         ComposableUseCase<Item, Item> { item in
             do {
                 try repository.delete(item)
@@ -56,7 +56,7 @@ extension UseCaseItem {
         }
     }
 
-    private static func useCaseDetchItems(_ repository: SwiftDataRepository<Item>) -> ComposableUseCase<[Item], FetchDescriptor<Item>> {
+    private static func useCaseDetchItems(_ repository: RepositorySwiftData<Item>) -> ComposableUseCase<[Item], FetchDescriptor<Item>> {
         ComposableUseCase<[Item], FetchDescriptor<Item>> { descriptor in
             do {
                 let items: [Item] = try repository.fetch(descriptor)
