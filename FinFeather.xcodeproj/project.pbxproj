@@ -251,15 +251,6 @@
 			path = Keychained;
 			sourceTree = "<group>";
 		};
-		06E3E8E22B5B3EDA00B0984B /* Configs */ = {
-			isa = PBXGroup;
-			children = (
-				06EFC0362AE96AAC00BDAF1D /* FinFeather.entitlements */,
-				06EFC03A2AE96AAC00BDAF1D /* Info.plist */,
-			);
-			path = Configs;
-			sourceTree = "<group>";
-		};
 		06EFC0222AE96AAB00BDAF1D = {
 			isa = PBXGroup;
 			children = (
@@ -284,10 +275,11 @@
 			children = (
 				0659D77B2AED201600C0D5B6 /* Application */,
 				0659D77E2AED219E00C0D5B6 /* Common */,
-				06E3E8E22B5B3EDA00B0984B /* Configs */,
 				06B80A122B59B2A700B31145 /* Features */,
 				065061F52B445D6200044955 /* Views */,
 				06EFC0342AE96AAC00BDAF1D /* Assets.xcassets */,
+				06EFC0362AE96AAC00BDAF1D /* FinFeather.entitlements */,
+				06EFC03A2AE96AAC00BDAF1D /* Info.plist */,
 				06EFC0372AE96AAC00BDAF1D /* Preview Content */,
 			);
 			path = FinFeather;
