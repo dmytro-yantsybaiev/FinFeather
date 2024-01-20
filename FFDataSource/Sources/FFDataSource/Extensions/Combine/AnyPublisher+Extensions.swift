@@ -10,10 +10,10 @@ import Combine
 public extension AnyPublisher {
 
     static func just<T>(_ output: T) -> AnyPublisher<T, Error> {
-        Future { $0(.success(output)) }.eraseToAnyPublisher()
+        Deferred { Future { $0(.success(output)) } }.eraseToAnyPublisher()
     }
 
-    static func error<T>(_ error: Error) -> AnyPublisher<T, Error> {
-        Future { $0(.failure(error)) }.eraseToAnyPublisher()
+    static func failure<T>(_ error: Error) -> AnyPublisher<T, Error> {
+        Deferred { Future { $0(.failure(error)) } }.eraseToAnyPublisher()
     }
 }

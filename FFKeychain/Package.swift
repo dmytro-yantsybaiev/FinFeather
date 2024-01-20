@@ -12,15 +12,7 @@ let package = Package(
     products: [
         .library(name: "FFKeychain", targets: ["FFKeychain"]),
     ],
-    dependencies: [
-        .package(name: "FFDataSource", path: "../FFDataSource"),
-    ],
     targets: [
-        .target(
-            name: "FFKeychain", 
-            dependencies: [
-                .product(name: "FFDataSource", package: "FFDataSource"),
-            ]
-        ),
+        .target(name: "FFKeychain"),
     ]
 )

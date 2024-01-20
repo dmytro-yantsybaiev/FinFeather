@@ -11,13 +11,10 @@
          location = "group:FFDataSource">
       </FileRef>
       <FileRef
-         location = "group:FFDomain">
-      </FileRef>
-      <FileRef
          location = "group:FFKeychain">
       </FileRef>
       <FileRef
-         location = "group:FFMVVM">
+         location = "group:UseCaseItem">
       </FileRef>
    </Group>
 </Workspace>
