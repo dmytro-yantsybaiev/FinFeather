@@ -55,7 +55,6 @@
 		06C5D1072AEDD03A00457EF8 /* FFKeychainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFKeychainTests.swift; sourceTree = "<group>"; };
 		06C5D10C2AEDD4F500457EF8 /* KeychainedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainedTests.swift; sourceTree = "<group>"; };
 		06E3E8DF2B5B2F8C00B0984B /* KeychainedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainedValues.swift; sourceTree = "<group>"; };
-		06E3E8E42B5B430800B0984B /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		06EFC02B2AE96AAB00BDAF1D /* FinFeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinFeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EFC02E2AE96AAB00BDAF1D /* FinFeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinFeatherApp.swift; sourceTree = "<group>"; };
 		06EFC0302AE96AAB00BDAF1D /* ViewItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItems.swift; sourceTree = "<group>"; };
@@ -255,19 +254,10 @@
 		06E3E8E22B5B3EDA00B0984B /* Configs */ = {
 			isa = PBXGroup;
 			children = (
-				06E3E8E32B5B42D000B0984B /* ci_scripts */,
 				06EFC0362AE96AAC00BDAF1D /* FinFeather.entitlements */,
 				06EFC03A2AE96AAC00BDAF1D /* Info.plist */,
 			);
 			path = Configs;
-			sourceTree = "<group>";
-		};
-		06E3E8E32B5B42D000B0984B /* ci_scripts */ = {
-			isa = PBXGroup;
-			children = (
-				06E3E8E42B5B430800B0984B /* ci_post_clone.sh */,
-			);
-			path = ci_scripts;
 			sourceTree = "<group>";
 		};
 		06EFC0222AE96AAB00BDAF1D = {
