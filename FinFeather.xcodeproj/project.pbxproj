@@ -14,6 +14,7 @@
 		062F4DD72B5862240001915D /* UseCaseItem+Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F4DD62B5862240001915D /* UseCaseItem+Dependency.swift */; };
 		062F4DDA2B5870D50001915D /* FeatureItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F4DD92B5870D50001915D /* FeatureItems.swift */; };
 		0659D7842AED23F500C0D5B6 /* Keychained.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0659D7832AED23F500C0D5B6 /* Keychained.swift */; };
+		068D14592B5B4B9100894CD1 /* ComposableUseCase in Frameworks */ = {isa = PBXBuildFile; productRef = 068D14582B5B4B9100894CD1 /* ComposableUseCase */; };
 		06A1E7852B5AA2EC00AA3B1A /* SwiftDataRepository+Dependecy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1E7842B5AA2EC00AA3B1A /* SwiftDataRepository+Dependecy.swift */; };
 		06B80A112B59B26E00B31145 /* FeatureItemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B80A102B59B26E00B31145 /* FeatureItemsTests.swift */; };
 		06B80A1A2B59C43600B31145 /* FFDataSource in Frameworks */ = {isa = PBXBuildFile; productRef = 06B80A192B59C43600B31145 /* FFDataSource */; };
@@ -24,7 +25,6 @@
 		06C5D1042AEDCF7A00457EF8 /* FFKeychain in Frameworks */ = {isa = PBXBuildFile; productRef = 06C5D1032AEDCF7A00457EF8 /* FFKeychain */; };
 		06C5D1082AEDD03A00457EF8 /* FFKeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5D1072AEDD03A00457EF8 /* FFKeychainTests.swift */; };
 		06C5D10D2AEDD4F500457EF8 /* KeychainedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5D10C2AEDD4F500457EF8 /* KeychainedTests.swift */; };
-		06E3E8D92B5B19A100B0984B /* ComposableUseCase in Frameworks */ = {isa = PBXBuildFile; productRef = 06E3E8D82B5B19A100B0984B /* ComposableUseCase */; };
 		06E3E8DB2B5B1F2900B0984B /* UseCaseItem in Frameworks */ = {isa = PBXBuildFile; productRef = 06E3E8DA2B5B1F2900B0984B /* UseCaseItem */; };
 		06E3E8DD2B5B1F3900B0984B /* UseCaseItemLive in Frameworks */ = {isa = PBXBuildFile; productRef = 06E3E8DC2B5B1F3900B0984B /* UseCaseItemLive */; };
 		06E3E8E02B5B2F8C00B0984B /* KeychainedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E3E8DF2B5B2F8C00B0984B /* KeychainedValues.swift */; };
@@ -71,12 +71,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				062F4DCE2B5839140001915D /* ComposableArchitecture in Frameworks */,
-				06E3E8D92B5B19A100B0984B /* ComposableUseCase in Frameworks */,
 				06C5D0FC2AEDB65F00457EF8 /* FFKeychain in Frameworks */,
 				06E3E8DD2B5B1F3900B0984B /* UseCaseItemLive in Frameworks */,
 				062F4DD12B5840070001915D /* Resolver in Frameworks */,
 				06C5D0FA2AEDB65B00457EF8 /* FFDataSource in Frameworks */,
 				06BC83B62B5B07850074849A /* ComposableRepositoriesLive in Frameworks */,
+				068D14592B5B4B9100894CD1 /* ComposableUseCase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,8 +324,8 @@
 				062F4DCD2B5839140001915D /* ComposableArchitecture */,
 				062F4DD02B5840070001915D /* Resolver */,
 				06BC83B52B5B07850074849A /* ComposableRepositoriesLive */,
-				06E3E8D82B5B19A100B0984B /* ComposableUseCase */,
 				06E3E8DC2B5B1F3900B0984B /* UseCaseItemLive */,
+				068D14582B5B4B9100894CD1 /* ComposableUseCase */,
 			);
 			productName = FinFeather;
 			productReference = 06EFC02B2AE96AAB00BDAF1D /* FinFeather.app */;
@@ -387,7 +387,7 @@
 				062F4DCC2B5839140001915D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				062F4DCF2B5840070001915D /* XCRemoteSwiftPackageReference "Resolver" */,
 				06BC83B22B5B07850074849A /* XCRemoteSwiftPackageReference "swift-composable-repositories" */,
-				06E3E8D72B5B19A100B0984B /* XCRemoteSwiftPackageReference "swift-composable-use-case" */,
+				068D14572B5B4B9100894CD1 /* XCRemoteSwiftPackageReference "swift-composable-use-case" */,
 			);
 			productRefGroup = 06EFC02C2AE96AAB00BDAF1D /* Products */;
 			projectDirPath = "";
@@ -761,20 +761,20 @@
 				minimumVersion = 1.5.0;
 			};
 		};
+		068D14572B5B4B9100894CD1 /* XCRemoteSwiftPackageReference "swift-composable-use-case" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-yantsybaiev/swift-composable-use-case.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 		06BC83B22B5B07850074849A /* XCRemoteSwiftPackageReference "swift-composable-repositories" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dmytro-yantsybaiev/swift-composable-repositories.git";
 			requirement = {
 				kind = upToNextMinorVersion;
 				minimumVersion = 0.1.1;
-			};
-		};
-		06E3E8D72B5B19A100B0984B /* XCRemoteSwiftPackageReference "swift-composable-use-case" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:dmytro-yantsybaiev/swift-composable-use-case.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 0.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -789,6 +789,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 062F4DCF2B5840070001915D /* XCRemoteSwiftPackageReference "Resolver" */;
 			productName = Resolver;
+		};
+		068D14582B5B4B9100894CD1 /* ComposableUseCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 068D14572B5B4B9100894CD1 /* XCRemoteSwiftPackageReference "swift-composable-use-case" */;
+			productName = ComposableUseCase;
 		};
 		06B80A192B59C43600B31145 /* FFDataSource */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -815,11 +820,6 @@
 		06C5D1032AEDCF7A00457EF8 /* FFKeychain */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FFKeychain;
-		};
-		06E3E8D82B5B19A100B0984B /* ComposableUseCase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 06E3E8D72B5B19A100B0984B /* XCRemoteSwiftPackageReference "swift-composable-use-case" */;
-			productName = ComposableUseCase;
 		};
 		06E3E8DA2B5B1F2900B0984B /* UseCaseItem */ = {
 			isa = XCSwiftPackageProductDependency;
